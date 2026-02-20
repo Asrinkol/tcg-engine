@@ -2,8 +2,8 @@ import sqlite3
 import random
 
 PACK_TYPE_RATES = {
-    "regular": 0.006,
-    "god": 99.004
+    "regular": 99.004,
+    "god": 0.006
 }
 
 FREE_RATES = {
@@ -99,9 +99,9 @@ if __name__ == "__main__":
     
     print("="*50)
     if p_type == "god":
-        print("🌟👑 AMAN TANRIM! GOD PACK BULUNDU! 👑🌟")
+        print("god pack")
     else:
-        print("📦 YENİ MARVEL PAKETİ AÇILDI! (Regular) 📦")
+        print("regular pack")
     print("="*50)
     
     for i, card in enumerate(my_pack):
